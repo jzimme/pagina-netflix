@@ -1,0 +1,23 @@
+@media screen and (max-width:700px){ /*quando a tela diminui de tamanho meos que 700px vai seguir essas regras*/
+    header .container{
+        display: flex;
+        flex-direction: column; /*joga os elementos para baixo quando diminui a tela*/
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+        
+    }
+
+    .carrossel-filmes .item{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width:1000px){ /*quando a tela ficar maior que 1000px vai seguir essas regras*/
+    .descricao{
+        width: 50%;
+    }
+}

@@ -1,0 +1,119 @@
+/*usar * é chamado de reset pois altera toda a página*/
+
+:root{ /*variável dentro do css, útil para quando precisa usar muito algo*/
+    --vermelho: #e50914;   
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*elementos serão no limite da caixa*/
+}
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex; /*alinha os elementos em tela*/
+    flex-direction: row;
+    align-items: center; /*alinha o cabeçalho verticalmente*/
+    justify-content: space-between; /*alinha verticalmente - space-between separa as classes*/
+
+}
+
+
+header .logo{ /*muda a logo da netflix*/
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arials', Times;
+    font-size: 40px;
+}
+
+
+header nav a{ /*limpa os ícones e deixar mais parecido com original*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*as passar o mouse mudam de cor*/
+    color: #fff;
+}
+
+/*filmes principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('./img/friends.jpg');
+
+    height: 600px;
+    background-size: cover; /*tamanho que a imagem vai usar na caixa*/
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*elementos no centro*/
+    align-items: flex-start; /*alinha elementos para esquerda ou direira*/
+}
+
+.filme-principal .descricao{
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+    }
+
+.carrossel-filmes .item{
+    height: 70%;
+    width: 80%;
+   }
